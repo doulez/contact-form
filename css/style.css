@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: #E0F1E8; 
+    font-family: 'Karla';
+}
+
+.container{
+    width: 736px;
+    margin: 128px auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.header{
+    padding: 40px 0px 32px 40px;
+    font-size: 32px;
+    line-height: 100%;
+    color: #2A4144;
+}
+
+.form{
+    padding: 0px 40px 40px 40px;
+}
+.fieldset-one,.fieldset-two{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    margin-bottom: 24px;
+}
+.fieldset-two{
+    margin-top: 8px;
+}
+.first-name-text,.last-name-text,.email-text,.query, .message,.checkbox{
+    font-size: 16px;
+    line-height: 150%;
+    color: #2A4144;
+    margin-bottom: 8px;
+}
+#first-name-field,#last-name-field,#email{
+    width:320px;
+    margin-top: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid #86A2A5;
+}
+#email{
+    width: 100%;
+    margin-bottom: 24px;
+}
+.star{
+    color: #0C7D69;
+}
+.query-g,.query-s{
+    width: 320px;
+    padding: 12px 24px 12px 12px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2A4144;
+    border: 1px solid #86A2A5;
+    border-radius: 8px;
+}
+#g-enq, #s-req{
+    margin-left: 26px;
+    margin-right: 12px;
+}
+#message-field{
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    resize: none;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-block: 40px;
+}
+#checkbox-field{
+    width:18px;
+    height:18px;
+    margin-right: 16px;
+}
+.btn{
+    width: 100%;
+    height: 59px;
+    background-color: #0C7D69;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: bold;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+.query-g:hover,
+.query-s:hover,
+textarea:hover {
+    border: 1px solid #0C7D69 !important;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: 1px solid #0C7D69 !important;
+}
+.btn:hover{
+    background-color: #052a23;
+}
+.query-g:focus-within,
+.query-s:focus-within{
+        background-color: #E0F1E8;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    accent-color:#0C7D69
+}

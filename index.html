@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact-form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Contact Us</h1>
+        <form action="" method="get" class="form">
+            <fieldset class="fieldset-one">
+                <label for="first-name-field" class="first-name-text">First Name <sup class="star">*</sup>    
+                    <br>
+                    <input type="text" name="first-name" id="first-name-field" required>
+                </label>
+                <label for="last-name-field" class="last-name-text">Last Name <sup class="star">*</sup> 
+                    <br>
+                    <input type="text" name="last-name" id="last-name-field" required>
+                </label>
+            </fieldset>
+            <label for="email-field" class="email-text">Email Address <sup class="star">*</sup></label><br>
+            <input type="email" name="email" id="email" required>
+            <label for="query-field" class="query">Query Type <sup class="star">*</sup></label><br>
+            <fieldset class="fieldset-two">
+                <label for="g-enq" class="query-g"><input type="radio" name="query" id="g-enq"> General Enquiry</label>
+                <label for="s-req" class="query-s"><input type="radio" name="query" id="s-req"> Support Request</label>
+            </fieldset>
+            <label for="message-field" class="message">Message<sup class="star">*</sup></label><br>
+            <textarea name="message" id="message-field" rows="5" required></textarea><br>
+            <label for="checkbox-field" class="checkbox"><input type="checkbox" name="checkbox" id="checkbox-field"> I consent to being contacted by the team <sup class="star">*</sup></label>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </div>
+</body>
+</html>
