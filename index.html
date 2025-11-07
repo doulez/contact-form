@@ -13,25 +13,27 @@
             <fieldset class="fieldset-one">
                 <label for="first-name-field" class="first-name-text">First Name <sup class="star">*</sup>    
                     <br>
-                    <input type="text" name="first-name" id="first-name-field" required>
+                    <input type="text" name="first-name" id="first-name-field" class="first-name-field">
                 </label>
                 <label for="last-name-field" class="last-name-text">Last Name <sup class="star">*</sup> 
                     <br>
-                    <input type="text" name="last-name" id="last-name-field" required>
+                    <input type="text" name="last-name" id="last-name-field" class="last-name-field">
                 </label>
             </fieldset>
             <label for="email-field" class="email-text">Email Address <sup class="star">*</sup></label><br>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" class="email">
             <label for="query-field" class="query">Query Type <sup class="star">*</sup></label><br>
             <fieldset class="fieldset-two">
-                <label for="g-enq" class="query-g"><input type="radio" name="query" id="g-enq"> General Enquiry</label>
-                <label for="s-req" class="query-s"><input type="radio" name="query" id="s-req"> Support Request</label>
+                <label for="g-enq" class="query-g" ><input type="radio" name="query" value="1" id="g-enq"> General Enquiry</label>
+                <label for="s-req" class="query-s"><input type="radio" name="query" value="2" id="s-req"> Support Request</label>
             </fieldset>
             <label for="message-field" class="message">Message<sup class="star">*</sup></label><br>
-            <textarea name="message" id="message-field" rows="5" required></textarea><br>
-            <label for="checkbox-field" class="checkbox"><input type="checkbox" name="checkbox" id="checkbox-field"> I consent to being contacted by the team <sup class="star">*</sup></label>
+            <textarea name="message" id="message-field" class="message-field" rows="5"></textarea><br>
+            <label for="checkbox-field" class="checkbox"><input type="checkbox" name="consent"  id="checkbox-field"> I consent to being contacted by the team <sup class="star">*</sup></label>
             <input type="submit" value="Submit" class="btn">
         </form>
     </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>
